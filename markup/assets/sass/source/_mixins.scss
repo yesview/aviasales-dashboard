@@ -1,0 +1,4 @@
+@mixin font-face($fontFamily: myFont, $ttfFileSrc: 'myFont.ttf') {
+  font-family: $fontFamily;
+  src: url($ttfFileSrc);
+}

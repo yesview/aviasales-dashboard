@@ -1,0 +1,12 @@
+$url_path: "..";
+
+//Mixins
+@import "source/mixins";
+
+// Common parts
+@import "source/fonts";
+@import "source/general";
+@import "source/reset";
+
+// Screens
+@import "source/aviasales_style";

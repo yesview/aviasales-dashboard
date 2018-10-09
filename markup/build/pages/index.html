@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AviaSales</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../css/core.css">
+</head>
+<body>
+	<div class="main">
+		<h1 class="main-header">Main metrics</h1>
+		<div class="tabs-collection">
+			<div class="tabs-collection__single-tab">Last hour</div>
+			<div class="tabs-collection__single-tab">Today</div>
+			<div class="tabs-collection__single-tab tabs-collection__single-tab_active">Yesterday</div>
+			<div class="tabs-collection__single-tab">Last 3 days</div>
+		</div>
+
+		<div class="error-statistic">
+			<div class="error-statistic-element">
+				<p class="error-statistic-element__main-info">Errors: 0,12%</p>
+				<p class="error-statistic-element__additional-info">Average: 0,11%</p>
+			</div>
+			<div class="error-statistic-element">
+				<p class="error-statistic-element__main-info">Zeroes: 5,12%</p>
+				<p class="error-statistic-element__additional-info">Average: 0,11%</p>
+			</div>
+			<div class="error-statistic-element">
+				<p class="error-statistic-element__main-info">Timeouts: 0,12%</p>
+				<p class="error-statistic-element__additional-info">Average: 0,11%</p>
+			</div>
+		</div>
+
+
+		<div class="statistic-line-graph">
+			<div class="statistic-line-graph__line">
+				<div class="statistic-line-graph__subline statistic-line-graph__subline_yellow" style="width: 38%"></div>
+				<div class="statistic-line-graph__subline statistic-line-graph__subline_purple" style="width: 25%"></div>
+				<div class="statistic-line-graph__subline statistic-line-graph__subline_blue" style="width: 22%"></div>
+				<div class="statistic-line-graph__subline statistic-line-graph__subline_grey" style="width: 15%"></div>
+			</div>
+			<div class="statistic-line-graph__description">
+				<div class="statistic-line-graph__single-event statistic-line-graph__single-event_yellow">
+					<p class="statistic-line-graph__single-event-note">Error 500: 1 256</p>
+				</div>
+				<div class="statistic-line-graph__single-event statistic-line-graph__single-event_purple">
+					<p class="statistic-line-graph__single-event-note">Error 501: 800</p>
+				</div>
+				<div class="statistic-line-graph__single-event statistic-line-graph__single-event_blue">
+					<p class="statistic-line-graph__single-event-note">Error 502: 650</p>
+				</div>
+				<div class="statistic-line-graph__single-event statistic-line-graph__single-event">
+					<p class="statistic-line-graph__single-event-note">Other: 330</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="statistic-list">
+			<div class="statistic-list-element">
+				<div class="statistic-list-element__logo-block">
+					<div class="semaphore-image semaphore-image__searches">
+						<div class="semaphore-image__semaphore"></div>
+					</div>
+				</div>
+				<div class="statistic-list-element__body-wrap">
+					<div class="statistic-list-element__main-info-wrap">
+						<div class="statistic-list-element__metrics-name-wrap">
+							<p class="statistic-list-element__metrics-name">Searches</p>
+							<p class="statistic-list-element__diff">+5%</p>
+						</div>
+						<div class="statistic-list-element__metrics-value-wrap">
+							<p class="statistic-list-element__metrics-value">29&nbsp;380</p>
+							<p class="statistic-list-element__metrics-time">Yesterday</p>
+						</div>
+						<div class="statistic-list-element__metrics-value-wrap">
+							<p class="statistic-list-element__metrics-value statistic-list-element__metrics-value_transparent">27 985</p>
+							<p class="statistic-list-element__metrics-time statistic-list-element__metrics-time_transparent">Last friday</p>
+						</div>
+					</div>
+					<div class="statistic-list-element__info-wrap">
+						<p class="statistic-list-element__info-main">Mobile traffic: 100%</p>
+						<p class="statistic-list-element__info-main">Web traffic: 100%</p>
+						<p class="statistic-list-element__info-description">You get 100% traffic on mobile and desktop devices.</p>
+						<p class="statistic-list-element__info-help">Help: <a class="small-link" href="#">Searches</a>, <a class="small-link" href="#">Pessimisation</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="statistic-list-element">
+				<div class="statistic-list-element__logo-block">
+					<div class="semaphore-image semaphore-image__clicks">
+						<div class="semaphore-image__semaphore semaphore-image__semaphore_failure"></div>
+					</div>
+				</div>
+				<div class="statistic-list-element__body-wrap">
+					<div class="statistic-list-element__main-info-wrap">
+						<div class="statistic-list-element__metrics-name-wrap">
+							<p class="statistic-list-element__metrics-name statistic-list-element__metrics-name_failure">Clicks</p>
+							<p class="statistic-list-element__diff statistic-list-element__diff_failure">+5%</p>
+						</div>
+						<div class="statistic-list-element__metrics-value-wrap">
+							<p class="statistic-list-element__metrics-value">243</p>
+							<p class="statistic-list-element__metrics-time">Yesterday</p>
+						</div>
+						<div class="statistic-list-element__metrics-value-wrap">
+							<p class="statistic-list-element__metrics-value statistic-list-element__metrics-value_transparent">280</p>
+							<p class="statistic-list-element__metrics-time statistic-list-element__metrics-time_transparent">Last friday</p>
+						</div>
+					</div>
+					<div class="statistic-list-element__info-wrap">
+						<p class="statistic-list-element__info-main statistic-list-element__info-main_failure">CTR: 0,04%</p>
+						<p class="statistic-list-element__info-description">Conversion from searches to clicks on all devices.</p>
+						<p class="statistic-list-element__info-help">Help: <a class="small-link" href="#">CTR</a>, <a class="small-link" href="#">Cliks</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="statistic-list-element">
+				<div class="statistic-list-element__logo-block">
+					<div class="semaphore-image semaphore-image__bookings">
+						<div class="semaphore-image__semaphore"></div>
+					</div>
+				</div>
+				<div class="statistic-list-element__body-wrap">
+					<div class="statistic-list-element__main-info-wrap">
+						<div class="statistic-list-element__metrics-name-wrap">
+							<p class="statistic-list-element__metrics-name">Bookings</p>
+						</div>
+						<div class="statistic-list-element__metrics-value-wrap">
+							<p class="statistic-list-element__metrics-value">24</p>
+							<p class="statistic-list-element__metrics-time">Yesterday</p>
+						</div>
+						<div class="statistic-list-element__metrics-value-wrap">
+							<p class="statistic-list-element__metrics-value statistic-list-element__metrics-value_transparent">24</p>
+							<p class="statistic-list-element__metrics-time statistic-list-element__metrics-time_transparent">Last friday</p>
+						</div>
+					</div>
+					<div class="statistic-list-element__info-wrap">
+						<p class="statistic-list-element__info-main">STR: 6.2%</p>
+						<p class="statistic-list-element__info-main">Avg. Check: 8 903₽</p>
+						<p class="statistic-list-element__info-description">Conversion from clicks to bookings on all devices.</p>
+						<p class="statistic-list-element__info-help">Help: <a class="small-link" href="#">STR</a>, <a class="small-link" href="#">Bookings</a>, <a class="small-link" href="#">Avg. Check</a></p>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+</body>

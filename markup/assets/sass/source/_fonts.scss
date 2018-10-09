@@ -1,0 +1,10 @@
+
+@font-face {
+    @include font-face("OpenSans", "../fonts/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    @include font-face("OpenSans", "../fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
