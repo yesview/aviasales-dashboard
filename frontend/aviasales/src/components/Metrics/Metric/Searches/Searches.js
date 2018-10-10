@@ -6,8 +6,8 @@ import clicks from "../Clicks/Clicks";
 
 const searches = props => {
     const searches = props.data.searches;
-    const mobile_traffic = searches.mobile_pessimizer ? +searches.mobile_pessimizer.toFixed(2) + "%" : "unknown";
-    const web_traffic = searches.mobile_pessimizer ? +searches.web_pessimizer.toFixed(2) + "%" : "unknown";
+    const mobile_traffic = searches.mobile_pessimizer ? 100 - +searches.mobile_pessimizer.toFixed(2) + "%" : "unknown";
+    const web_traffic = searches.mobile_pessimizer ? 100 - +searches.web_pessimizer.toFixed(2) + "%" : "unknown";
     const note = mobile_traffic === web_traffic ?
         `You get ${mobile_traffic} traffic on mobile and desktop devices.` :
         `You get ${mobile_traffic} traffic on mobile devices and ${web_traffic} on desktop devices.`;
